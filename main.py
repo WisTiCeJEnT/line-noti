@@ -33,4 +33,4 @@ def _lineNotify(payload, file=None):
 
 while True:
     lineNotify(checkPrice())
-    sleep(60)
+    sleep(60*60)
