@@ -31,7 +31,6 @@ def _lineNotify(payload, file=None):
     headers = {'Authorization' : 'Bearer ' + token}
     return requests.post(url, headers=headers, data = payload, files=file)
 
-sleep(60*(60-datetime.datetime.now().minute))
 while True:
     lineNotify(checkPrice())
-    sleep(60*60)
+    sleep(60)
